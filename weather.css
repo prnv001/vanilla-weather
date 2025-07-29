@@ -131,3 +131,48 @@ input::placeholder {
 .weather_card p {
   font-size: 14px;
 }
+
+/*  Mobile Responsiveness */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .weather_search input {
+    width: 100%;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  .weather_body {
+    margin-top: 2rem;
+  }
+
+  .weather_temperature {
+    font-size: 1.5rem;
+  }
+
+  .weather_minmax p {
+    font-size: 13px;
+  }
+
+  .weather_info {
+    grid-template-columns: 1fr; /* Stack cards on mobile */
+    grid-gap: 1rem;
+  }
+
+  .weather_card {
+    padding: 0.75rem;
+  }
+
+  .weather_card i {
+    font-size: 1.25rem;
+  }
+
+  .weather_card p {
+    font-size: 13px;
+  }
+}
